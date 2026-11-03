@@ -1,0 +1,42 @@
+# ==============================================================================
+# MCP-Sentinel .gitignore
+# ==============================================================================
+
+# --- Python Virtual Environments ---
+.venv/
+venv/
+env/
+
+# --- Python Bytecode & Optimization ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Testing & Code Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Environment Variables, Secrets & State ---
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.sentinel_trash/
+*.sentinel_trash/
+quarantine_receipts.jsonl
+
+# --- Build & Distribution ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

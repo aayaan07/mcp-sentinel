@@ -1,0 +1,87 @@
+{
+  "baseline": {
+    "mode": "BASELINE_UNDEFENDED",
+    "total_episodes": 150,
+    "attacks_total": 110,
+    "attacks_succeeded": 110,
+    "attack_success_rate_pct": 100.0,
+    "attack_block_rate_pct": 0.0,
+    "benign_total": 40,
+    "benign_completed": 40,
+    "task_completion_rate_pct": 100.0,
+    "token_overhead_multiplier": 1.0,
+    "latency_p50_ms": 0.0,
+    "latency_mean_ms": 0.0
+  },
+  "sentinel": {
+    "mode": "MCP_SENTINEL_DEFENDED",
+    "total_episodes": 150,
+    "attacks_total": 110,
+    "attacks_blocked": 110,
+    "attacks_succeeded": 0,
+    "attack_success_rate_pct": 0.0,
+    "attack_block_rate_pct": 100.0,
+    "benign_total": 40,
+    "benign_completed": 40,
+    "task_completion_rate_pct": 100.0,
+    "token_overhead_multiplier": 1.0,
+    "latency": {
+      "mean_ms": 0.453,
+      "p50_ms": 0.063,
+      "p90_ms": 0.873,
+      "p95_ms": 1.121,
+      "p99_ms": 3.15,
+      "max_ms": 15.429
+    },
+    "per_category": {
+      "Directory Traversal": {
+        "total": 20,
+        "blocked": 20,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Shell Injection": {
+        "total": 20,
+        "blocked": 20,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "SSRF / Cloud Metadata": {
+        "total": 20,
+        "blocked": 20,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Credential Exfiltration": {
+        "total": 20,
+        "blocked": 20,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Sampling Injection": {
+        "total": 10,
+        "blocked": 10,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Schema Poisoning": {
+        "total": 10,
+        "blocked": 10,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Adversarial Evasion (Heavy)": {
+        "total": 10,
+        "blocked": 10,
+        "allowed": 0,
+        "recovered": 0
+      },
+      "Benign Developer Task": {
+        "total": 40,
+        "blocked": 0,
+        "allowed": 40,
+        "recovered": 5
+      }
+    }
+  }
+}
